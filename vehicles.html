@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="vehicle-container">
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html">Automotive</a>
+            </div>
+
+            <div class="next">
+                <a href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+
+            <div class="search">
+                <form id="search">
+                    <input type="search" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="close-menu">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="open-nav">
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="vehicles.html">All Vehicles</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="buy.html">SUVs & Crossovers</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="buy.html">Trucks & Vans</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="buy.html">Cars</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="buy.html">Electric</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="buy.html">Performance Vehicles</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <p class="call">888-888-8888</p>
+                <p class="mail">example@gmail.com</p>
+            </div>
+            <div class="nav-media">
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row vehicle-search-row mx-auto">
+        <div class="col-md-12 d-flex flex-wrap justify-content-between">
+            <ul class="list-inline filterList">
+                <li class="filterListItem btn violetBtn" data-filter="all">All</li>
+                <li class="filterListItem btn violetBtn" data-filter="suvs">SUVS</li>
+                <li class="filterListItem btn violetBtn" data-filter="cars">Cars</li>
+                <li class="filterListItem btn violetBtn" data-filter="vans">Vans</li>
+                <li class="filterListItem btn violetBtn" data-filter="sports">Sport</li>
+            </ul>
+            <input type="text" class="searchBar form-control" placeholder="Search" name="search" data-search>
+        </div>
+    </div>
+    <div class="filtr-container vehicle-img-row">
+        <div class="col-md-3 filtr-item thumbnail text-center" data-category="all,cars" data-sort="car">
+            <a href="./buy.html"><img src="images/car_1.jpg" alt=""></a>
+            <span class="item-desc">car</span>
+        </div>
+        
+        <div class="col-md-3 filtr-item thumbnail text-center" data-category="all,suvs" data-sort="suv">
+            <a href="./buy.html"><img src="images/car_2.jpg" alt=""></a>
+            <span class="item-desc">suv</span>
+        </div>
+        
+        <div class="col-md-3 filtr-item thumbnail text-center" data-category="all,sports" data-sort="sport">
+            <a href="./buy.html"><img src="images/car_3.jpg" alt=""></a>
+            <span class="item-desc">sport</span>
+        </div>
+        
+        <div class="col-md-3 filtr-item thumbnail text-center" data-category="all,sports" data-sort="sport">
+            <a href="./buy.html"><img src="images/car_4.jpg" alt=""></a>
+            <span class="item-desc">sport</span>
+        </div>
+        
+        <div class="col-md-3 filtr-item thumbnail text-center" data-category="all,vans" data-sort="van">
+            <a href="./buy.html"><img src="images/car_5.jpg" alt=""></a>
+            <span class="item-desc">van</span>
+        </div>
+        
+        <div class="col-md-3 filtr-item thumbnail text-center" data-category="all,cars" data-sort="car">
+            <a href="./buy.html"><img src="images/car_1.jpg" alt=""></a>
+            <span class="item-desc">car</span>
+        </div>
+        
+        <div class="col-md-3 filtr-item thumbnail text-center" data-category="all,suvs" data-sort="suv">
+            <a href="./buy.html"><img src="images/car_2.jpg" alt=""></a>
+            <span class="item-desc">suv</span>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="js/jquery.filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

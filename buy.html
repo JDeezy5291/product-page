@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-top">
+            <div class="buy_left"></div>
+            <div class="buy_right"></div>
+        </div>
+
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html">Automotive</a>
+            </div>
+
+            <div class="next">
+                <a href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+
+            <!-- <div class="watch"><i class="fa fa-search"></i></div> -->
+
+            <div class="search">
+                <form id="search">
+                    <input type="search" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="close-menu">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="open-nav">
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <p class="call">888-888-8888</p>
+                <p class="mail">example@gmail.com</p>
+            </div>
+            <div class="nav-media">
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="left-bottom">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+        </div> -->
+
+        <div class="left-sidebar">
+            <h1 class="product-title">More than just a Vehicle</h1>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia amet corrupti eius
+                nobis tempore explicabo eveniet aperiam illum, eum asperiores fuga officia quas iste esse illo hic,
+                consectetur suscipit.</p>
+
+            <div class="btn">
+                <p id="price">Starting at $14,270</p>
+                <a href="buy.html" class="btn">LEARN MORE</a>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://images.pexels.com/photos/244212/pexels-photo-244212.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://images.pexels.com/photos/170813/pexels-photo-170813.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" style="width:100%">
+            </div>
+            
+            <a class="prevSlide" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextSlide" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+        </div>
+            
+            <!-- <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div> -->
+
+        <div class="media">
+            <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
