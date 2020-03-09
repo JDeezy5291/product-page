@@ -1,11 +1,18 @@
-html,body {
+/* ghost.css */
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  } */
+  html,body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
     font-family: 'Playfair Display' !important;
+    overflow: hidden;
 }
-a {
+.nav a, a {
     cursor: pointer;
     color: #FFF;
     text-decoration: none;
@@ -28,10 +35,19 @@ a {
 .left,
 .right,
 .buy_left,
-.buy_right {
+.buy_right,
+.vehicle_bg {
     position: absolute;
     height: 100%;
+}
+.left,
+.right,
+.buy_left,
+.buy_right {
     width: 50%;
+}
+.vehicle_bg {
+    width: 100%;
 }
 .left {
     background: url('https://images.pexels.com/photos/193999/pexels-photo-193999.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
@@ -42,13 +58,14 @@ a {
 .left::before,
 .right::before,
 .buy_left::before,
-.buy_right::before {
+.buy_right::before,
+.vehicle_bg::before {
     position: absolute;
     content: "";
     width: 100%;
     height: 100vh;
 }
-.right::before,.buy_right::before,.left::before {
+.right::before,.buy_right::before,.left::before,.vehicle_bg::before {
     background: rgba(43, 43, 43, 0.6);
 }
 .buy_right {
@@ -60,6 +77,12 @@ a {
 }
 .buy_left {
     background: #262626;
+}
+.vehicle_bg {
+    background: url('https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 .right {
     left: 50%;
@@ -187,9 +210,6 @@ a {
     color: #FFF;
     font-weight: lighter;
 }
-.nav a {
-    color: #262626;;   
-}
 nav {
     position: fixed;
     width: 100%;
@@ -207,7 +227,7 @@ nav {
     color: #FFF;
 }
 .next {
-    left: 200px;
+    left: 250px;
 }
 .search {
     right: 0;
@@ -355,8 +375,6 @@ input::-webkit-input-placeholder {
 .media ul li :not(:last-child) {
     padding-right: 40px;
 }
-/* #454ade*/
-
 .galleryFilters {
     margin: 20px auto;
     align-content: center;
@@ -401,7 +419,7 @@ input.searchBar:focus {
     .close-menu {
         padding: 0;
     }
-    .contact,.search,.right-sidebar,.left {
+    .contact,.search,.right-sidebar {
         display: none;
     }
     .logo,.next {
@@ -409,7 +427,7 @@ input.searchBar:focus {
     }
     .next {
         left: 70%;
-        padding: 10px 60px 10px 80px;   
+        padding: 10px 20px 10px 80px;   
         position: absolute;
         float: right;
         background: transparent;
@@ -444,6 +462,6 @@ input.searchBar:focus {
     }
     .right {
         left: 0;
-        width: 100%;
+        width: 100% !important;
     }
 }
